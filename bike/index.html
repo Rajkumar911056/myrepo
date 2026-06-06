@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thunder X Bike</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
+    url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1600');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:5rem;
+    letter-spacing:5px;
+    color:#ff4500;
+}
+
+.hero p{
+    font-size:1.3rem;
+    margin:20px 0;
+    max-width:700px;
+}
+
+.btn{
+    padding:15px 35px;
+    border:none;
+    background:#ff4500;
+    color:white;
+    font-size:18px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.features{
+    padding:80px 10%;
+}
+
+.features h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#ff4500;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1a1a1a;
+    padding:25px;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#ff4500;
+    margin-bottom:10px;
+}
+
+.specs{
+    background:#111;
+    padding:60px;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.spec{
+    text-align:center;
+    margin:20px;
+}
+
+.spec h2{
+    color:#ff4500;
+    font-size:40px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <h1>THUNDER X</h1>
+    <p>
+        Feel the power. Experience the freedom.
+        Ride beyond limits with the all-new Thunder X.
+    </p>
+    <button class="btn">Book A Ride</button>
+</section>
+
+<section class="features">
+    <h2>Why Thunder X?</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🏍 Powerful Engine</h3>
+            <p>1200cc performance engine built for thrill seekers.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Quick Acceleration</h3>
+            <p>0-100 km/h in under 3.5 seconds.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛡 Smart Safety</h3>
+            <p>ABS, traction control, and ride assistance.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Sport Design</h3>
+            <p>Aerodynamic body with aggressive styling.</p>
+        </div>
+    </div>
+</section>
+
+<section class="specs">
+    <div class="spec">
+        <h2>1200cc</h2>
+        <p>Engine</p>
+    </div>
+
+    <div class="spec">
+        <h2>320</h2>
+        <p>Top Speed km/h</p>
+    </div>
+
+    <div class="spec">
+        <h2>3.5s</h2>
+        <p>0-100 km/h</p>
+    </div>
+
+    <div class="spec">
+        <h2>24L</h2>
+        <p>Fuel Tank</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Thunder X Motorcycles | Ride Your Dream</p>
+</footer>
+
+</body>
+</html>
